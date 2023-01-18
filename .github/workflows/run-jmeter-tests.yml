@@ -46,6 +46,12 @@ jobs:
           cd $GITHUB_WORKSPACE/apache-jmeter-5.4.3
           wget -q --no-check-certificate https://jmeter-plugins.org/files/packages/jpgc-dummy-0.4.zip  -P .
           unzip -o jpgc-dummy-0.4.zip  && rm jpgc-dummy-0.4.zip
+          wget -q --no-check-certificate https://jmeter-plugins.org/files/packages/jpgc-casutg-2.10.zip  -P .
+          unzip -o jpgc-casutg-2.10.zip  && rm jpgc-casutg-2.10.zip
+          wget -q --no-check-certificate https://jmeter-plugins.org/files/packages/jpgc-graphs-basic-2.0.zip  -P .
+          unzip -o jpgc-graphs-basic-2.0.zip  && rm jpgc-graphs-basic-2.0.zip
+          wget -q --no-check-certificate https://jmeter-plugins.org/files/packages/jpgc-tst-2.5.zip  -P .
+          unzip -o jpgc-tst-2.5.zip  && rm jpgc-tst-2.5.zip         
 
       - name: run jmx scripts
         run: |
